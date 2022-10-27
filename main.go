@@ -99,7 +99,6 @@ func main() {
 	}
 
 	goterm.Flush()
-	// start the timer
 
 	// stop the timer
 	elapsed := time.Since(start)
