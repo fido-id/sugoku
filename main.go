@@ -60,7 +60,7 @@ func main() {
 	fmt.Println("1. DummySolver")
 	fmt.Println("2. SimpleSolver")
 	fmt.Println("3. BackTrackingSolver")
-	//fmt.Println("4. PencilMarkSolver")
+	fmt.Println("4. PencilMarkSolver")
 
 	// read the choice
 	var choice int
@@ -87,12 +87,12 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-	//case 4:
-	//	start = time.Now()
-	//	b, err = solvers.PencilMarkSolver(b)
-	//	if err != nil {
-	//		panic(err)
-	//	}
+	case 4:
+		start = time.Now()
+		b, err = solvers.PencilMarkSolver(b)
+		if err != nil {
+			panic(err)
+		}
 	default:
 		goterm.Println("Scelta non valida!")
 		return
