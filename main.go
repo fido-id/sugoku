@@ -58,7 +58,7 @@ func main() {
 
 	fmt.Println("Scegliere il solver da usare:")
 	fmt.Println("1. DummySolver")
-	//fmt.Println("2. SimpleSolver")
+	fmt.Println("2. SimpleSolver")
 	//fmt.Println("3. BackTrackingSolver")
 	//fmt.Println("4. PencilMarkSolver")
 
@@ -75,12 +75,12 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-	//case 2:
-	//	start = time.Now()
-	//	b, err = solvers.SimpleSolver(b)
-	//	if err != nil {
-	//		panic(err)
-	//	}
+	case 2:
+		start = time.Now()
+		b, err = solvers.SimpleSolver(b)
+		if err != nil {
+			panic(err)
+		}
 	//case 3:
 	//	start = time.Now()
 	//	b, err = solvers.BackTrackingSolver(b)
